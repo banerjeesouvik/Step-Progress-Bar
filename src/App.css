@@ -1,0 +1,36 @@
+.App {
+    color: #333333;
+}
+.App header {
+    display: flex;
+    background-color: white;
+    padding: 2rem;
+    justify-content: space-between;
+    box-shadow: 0 3px 5px rgba(57, 63, 72, 0.1);
+    font-size: 1.15rem;
+}
+
+.App .purpose {
+    padding: 2rem 0;
+    height: 10rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+}
+
+.start-btn {
+    display: block;
+    padding: 1rem 2.5rem;
+    margin: 2rem auto 0;
+    font-size: 1.25rem;
+    background-color: #58bb58;
+    color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.start-btn.reset {
+    background-color: #08C;
+}

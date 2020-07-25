@@ -1,0 +1,75 @@
+.node {
+    position: relative;
+    text-align: center;
+    padding: 0.5rem;
+    background-color: #e6e6e6;
+}
+
+.node .circle {
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.node.complete .circle {
+    background-color: #58bb58;
+}
+
+.node.active .circle {
+    border-color: #73b5e8;
+}
+
+.node.error .circle {
+    border-color: #e24c4b;
+}
+
+.node.pending .circle::after {
+    content: '';
+    height: 0.5rem;
+    width: 0.5rem;
+    border-radius: 2px;
+    background-color: gray;
+}
+
+.node .circle img {
+    width: 1.25rem;
+}
+
+.node .name {
+    position: absolute;
+    left: 0.5rem;
+    right: 0.5rem;
+    margin-top: 0.5rem;
+    font-size: 0.75rem;
+}
+
+.node .tooltip {
+    position: absolute;
+    margin-top: 2rem;
+    width: 10rem;
+    padding: 0.5rem;
+    background-color: white;
+    border-radius: 4px;
+}
+
+.node .tooltip > input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #9c9c9c;
+    outline: 2px solid #08C;
+}
+
+.node .tooltip::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 1rem;
+    border-width: 6px;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+  }
